@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body{
+    background-color: hsl(47, 88%, 63%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Figtree', sans-serif;
+}
+
+.card {
+    /* Styles for the card container */
+    display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: column;
+    background-color: hsl(0, 0%, 100%);
+    border: 1px solid #000000; /* Example border for the card */
+    border-radius: 20px; /* Rounded corners for the card */
+    width: 327px; /* Set a fixed width for the card */
+    height: auto;
+    box-shadow: 8px 8px rgba(0, 0, 0, 1);
+    /* justify-content: center; */
+    box-sizing: border-box;
+}
+
+.img-wrapper{
+    padding: 24px 24px 24px 24px;
+}
+.svg {
+    width: 279px;
+    height: 200px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.content{
+    padding: 0 24px 24px 24px;
+    max-width: 100%;
+    max-height: 100%;
+    line-height: 1.5;
+    flex: 1;
+    
+}
+
+a{
+    text-decoration: none;
+    color: hsl(0, 0%, 7%);
+}
+
+a:hover{
+    color: hsl(47, 88%, 63%);
+}
+
+.category{
+    display: inline-block;
+    padding: 4px 15px;
+    font-size: 13px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    color: #020202;
+    background-color: hsl(47, 88%, 63%);
+    border-radius: 8%;
+}
+
+.publish-date{
+    padding-top: 12px;
+    font-size: 12px;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 800;
+    padding-top: 12px;
+    text-decoration: none;
+
+}
+
+.description{
+    padding-top: 12px;
+    color: hsl(0, 0%, 50%);
+    font-size: 14px;
+}
+
+.author{
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+    padding-bottom: 24px;
+    font-size: 14px;
+    font-weight: 800
+    
+}
+
+.author img{
+    padding-right: 10px;
+    width: 32px;
+    height: auto;
+}
+
+@media screen and (min-width: 375px) {
+    .card {
+        width: 384px; /* Set to 100% to make the image fill the container on small screens */
+    }
+
+    .svg{
+        width: 100%;
+    }
+
+    .description{
+        font-size: 16px;
+    }
+}
+
+
+/* ## Colors
+
+### Primary
+
+- Yellow: hsl(47, 88%, 63%)
+
+### Neutral
+
+- White: hsl(0, 0%, 100%)
+- Grey: hsl(0, 0%, 50%)
+- Black: hsl(0, 0%, 7%) */
